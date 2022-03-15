@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1c1d25;
+  max-width: 140rem;
+  /* to center the entire page */
+  /* margin: 0 auto; */
+}
+
+section {
+  background-color: #fff;
+}
+
+.nav-name {
+  font-size: 2.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  background-color: #1c1d25;
+  color: #fff;
+  padding: 1.8rem 1.8rem 0 1.8rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+  list-style-type: none;
+  font-size: 3rem;
+}
+
+.nav-link-item {
+  text-decoration: none;
+}
+
+.hero-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background-color: #1c1d25;
+  height: 100vh;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.hero-text {
+  margin-top: 9rem;
+  margin-left: 4rem;
+  margin-bottom: 30rem;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 9rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;;
+  text-transform: uppercase;
+}
+.information-header {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.information-text {
+  font-size: 2.4rem;
+}
+
+.btn {
+  margin-top: 1.2rem;
+  width: 20rem;
+  height: 6rem;
+  border-radius: 2.5rem;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.btn:hover {
+  background-color: #ef744b;
+  cursor: pointer;
+}
+
+.socials {
+  padding-right: 4rem;
+  align-self: flex-start;
+}
+
+footer {
+  height: 50rem;
+  background-color: black;
+}
