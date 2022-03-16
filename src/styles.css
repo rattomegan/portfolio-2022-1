@@ -162,6 +162,10 @@ footer {
   color: rgba(51, 51, 51, 0.37);
 }
 
+.project-detail {
+  display: flex;
+  justify-content: space-between;
+}
 
 .project-name {
   margin-top: 1.2rem;
@@ -181,14 +185,21 @@ footer {
   padding-right: 1.2rem;
 }
 
+.project-links {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-end;
+  gap: 1.6rem;
+  padding-bottom: .4rem;
+}
+
 .project-link:link,
 .project-link:visited {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 2.2rem;
   color: #333;
   font-weight: 600;
-  padding: 2.2rem 2.2rem 0 0;
 }
 
 .project-link:hover,
@@ -217,6 +228,7 @@ footer {
   padding: 2.2rem;
   padding-top: 2.2rem;
   border-top: 2px solid #333;
+  background-color: rgb(228, 228, 228);
 }
 
 
@@ -269,6 +281,10 @@ input {
 }
 
 @media (max-width: 35rem) {
+  .hero-text {
+    margin-top: 5rem;
+  }
+
   .hamburger {
     display: block;
     border: 0;
