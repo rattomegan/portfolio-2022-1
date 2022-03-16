@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -109,4 +110,73 @@ h1 {
 footer {
   height: 50rem;
   background-color: black;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  /* margin-top: 3.2rem; */
+  display: flex;
+  border-top: 2px solid #333;
+  padding-left: 1.2rem;
+  padding-bottom: 1.8rem;
+  padding: 1.8rem 1.2rem;
+}
+
+.project:hover {
+  background-color: #ef744b44;
+}
+
+.project-number {
+  font-size: 7.2rem;
+  font-weight: 700;
+  width: 10.8rem;
+  color: rgba(51, 51, 51, 0.37);
+}
+
+
+.project-name {
+  margin-top: 1.2rem;
+  font-size: 3.2rem;
+}
+
+.project-date {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #444
+}
+
+.project-text {
+  font-size: 2.2rem;
+  color: #444;
+  max-width: 70rem;
+}
+
+.project-imgs {
+  /* max-height: 25rem; */
+  max-width: 40rem;
+  margin-left: auto;
+}
+.project-imgs img {
+  width: 100%;
+}
+
+@media (max-width: 50rem) {
+  .project-imgs {
+    /* max-height: 25rem; */
+    max-width: 40rem;
+    margin-left: 0;
+  }
+
+  .project {
+    flex-wrap: wrap;
+  }
+
+  .project-name {
+    margin-top: 0;
+    font-size: 3.2rem;
+  }
 }
