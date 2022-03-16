@@ -68,7 +68,7 @@ ul.show {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: auto auto;
+  margin: auto 3rem;
 }
 
 .hero {
@@ -264,7 +264,7 @@ input {
 
 label {
   display: flex;
-  
+
 }
 .message {
   min-width: 30rem;
