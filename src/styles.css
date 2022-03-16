@@ -106,13 +106,18 @@ h1 {
   max-width: 44rem;
 }
 
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
 .btn {
   margin-top: 1.2rem;
   width: 20rem;
   height: 6rem;
   border-radius: 2.5rem;
   border: 2px solid #fff;
-  background-color: transparent;
+  background-color: #333;
   color: #fff;
   text-align: center;
   font-size: 3rem;
@@ -124,11 +129,6 @@ h1 {
   cursor: pointer;
 }
 
-.socials {
-  padding-right: 4rem;
-  align-self: flex-start;
-}
-
 footer {
   height: 50rem;
   background-color: black;
@@ -137,15 +137,17 @@ footer {
 .projects-container {
   display: flex;
   flex-direction: column;
+  /* padding-left: 1.2rem; */
 }
 
 .project {
   /* margin-top: 3.2rem; */
   display: flex;
   border-top: 2px solid #333;
-  padding-left: 1.2rem;
+  /* padding-left: 1.2rem; */
   padding-bottom: 1.8rem;
   padding: 1.8rem 1.2rem;
+  gap: 1.2rem;
   transition: all .3s;
 }
 
@@ -179,6 +181,21 @@ footer {
   padding-right: 1.2rem;
 }
 
+.project-link:link,
+.project-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 600;
+  padding: 2.2rem 2.2rem 0 0;
+}
+
+.project-link:hover,
+.project-link:active {
+  color: #1864ab;
+}
+
 .project-imgs {
   /* max-height: 25rem; */
   max-width: 40rem;
@@ -194,6 +211,40 @@ footer {
 
 .hamburger:focus {
   outline: 0;
+}
+
+.contact-section {
+  padding: 2.2rem;
+  padding-top: 2.2rem;
+  border-top: 2px solid #333;
+}
+
+
+form {
+  /* margin-left: 2.2rem; */
+  display: flex;
+  gap: 2.2rem;
+  flex-direction: column;
+  font-size: 2.2rem;
+  max-width: 50rem;
+}
+
+.input-field {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  gap: 1.8rem;
+}
+
+input {
+  height: 2.8rem;
+  width: 30rem;
+}
+
+.message {
+  min-width: 30rem;
+  min-height: 20rem;
+  font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 50rem) {
