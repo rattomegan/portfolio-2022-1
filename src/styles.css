@@ -87,6 +87,7 @@ ul.show {
 }
 
 .hero-title {
+  /* margin-top: 3rem; */
   font-size: 9rem;
   text-transform: uppercase;
 }
