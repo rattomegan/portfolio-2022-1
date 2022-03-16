@@ -62,7 +62,7 @@ ul.show {
 
 .nav-link-item:hover,
 .nav-link-item:active {
-  color: #ffa94d94;
+  color: #000099;
 }
 
 .hero-container {
@@ -133,7 +133,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ffa94d94;
+  background-color: #000099;
   cursor: pointer;
   border: 2px solid transparent;
 }
@@ -150,6 +150,10 @@ footer {
   /* padding-left: 1.2rem; */
 }
 
+.project-header {
+  margin: 2.4rem 0 1.2rem 1.2rem;
+}
+
 .project {
   /* margin-top: 3.2rem; */
   display: flex;
@@ -162,7 +166,8 @@ footer {
 }
 
 .project:hover {
-  background-color: #ffa94d94;
+  background-color: #ffe6b3;
+  background-color: #ffeecc;
 }
 
 .project-number {
@@ -214,7 +219,7 @@ footer {
 
 .project-link:hover,
 .project-link:active {
-  color: #1864ab;
+  color: #000099;
 }
 
 .project-imgs {
@@ -224,6 +229,8 @@ footer {
 }
 .project-imgs img {
   width: 100%;
+  border-radius: 3px;
+  margin-bottom: 4rem;
 }
 
 .hamburger {
