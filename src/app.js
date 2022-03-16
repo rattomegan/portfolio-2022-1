@@ -7,16 +7,18 @@ const contactLink = document.getElementById('contact-nav-link');
 
 function toggleButton() {
   navList.classList.toggle('show');
-  // if(navList.style.display !== 'block') {
-  //   if(navName.innerHTML !== '') {
-  //     navName.innerHTML = ''
-  //   } 
-  // }else {
-  //     navName.innerHTML = `<span>Megan</span><br>
-  //     <span>Ratto</span>`
-  // }
 
+    if(navName.innerHTML !== '') {
+      navName.innerHTML = ''
+    } else {
+      navName.innerHTML =
+      `<a class="nav-name" href="#">
+      <span>Megan</span><br>
+      <span>Ratto</span>
+      </a>`
+    }
 }
+
 
 hamburgerButton.addEventListener('click', toggleButton);
 projectLink.addEventListener('click', toggleButton)
