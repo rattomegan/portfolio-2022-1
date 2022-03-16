@@ -9,29 +9,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bd9b1a265c.js" crossorigin="anonymous"></script>
   <title>Megan Codes</title>
 </head>
 <body>
   <header>
     <nav>
-      <div class="nav-name">
+      <div class="nav-name" id="nav-name">
         <span>Megan</span><br>
         <span>Ratto</span>
       </div>
-      <ul class="nav-links">
-        <li class="nav-link-item">About Me</li>
-        <li class="nav-link-item">Projects</li>
-        <li class="nav-link-item">Contact</li>
+      <ul class="nav-links" id="nav-links">
+        <li> 
+          <a href="#projects-container" class="nav-link-item" id="project-nav-link">Projects</a>
+        </li>
+        <li> 
+          <a href="#contact-section" class="nav-link-item" id="contact-nav-link">Contact</a>
+        </li>
       </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars" ></i>
+      </button>
     </nav>
   </header>
   
   <section class="hero">
     <div class="hero-container">
       <div class="hero-text">
-        <h2>Full Stack Developer</h2>
-        <button class="btn">About me</button>
+        <h2 class="hero-title">Full Stack Developer</h2>
+        <!-- <button class="btn">About me</button> -->
+        <div class="about-section">
+          <h2 class="header-secondary">About Me</h2>
+          <p class="about-text">I am a full stack software developer with a passion for learning and problem solving. My background in accounting and administration has helped me develop strong communication and analytical skills, along with a tenacious work ethic. I pride myself on producing efficient, reusable, and well organized code that prioritizes the user experience. Throughout my career I have always found excitement in navigating complex problems with creative solutions, and I am eager to continue applying my skills to grow as a software developer.
+          </p>
+        </div>
       </div>
+
       <div class="socials">
         <div>
           <a href="https://www.linkedin.com/in/rattomegan">
@@ -47,15 +60,15 @@
       </div>
     </div>
   </section>
-
+<!-- 
   <section>
     <div class="information">
       <h2 class="header-secondary">About Me</h2>
       <p class="information-text">I am a full stack software developer with a passion for learning and problem solving. My background in accounting and administration has helped me develop strong communication and analytical skills, along with a tenacious work ethic. I pride myself on producing efficient, reusable, and well organized code that prioritizes the user experience. Throughout my career I have always found excitement in navigating complex problems with creative solutions, and I am eager to continue applying my skills to grow as a software developer.
       </p>
     </div>
-  </section>
-  <section class="projects-container">
+  </section> -->
+  <section class="projects-container" id="projects-container">
     <h2 class="header-secondary">Projects</h2>
     <div>
       <div class="project">
@@ -105,6 +118,7 @@
 
     </div>
   </section>
+  <section id="contact-section"></section>
   <footer></footer>
 
 

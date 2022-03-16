@@ -21,8 +21,10 @@ section {
 }
 
 .nav-name {
+  display: block;
   font-size: 2.8rem;
 }
+
 
 nav {
   display: flex;
@@ -35,21 +37,34 @@ nav {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 1.6rem;
   width: 50rem;
   list-style-type: none;
   font-size: 3rem;
 }
 
-.nav-link-item {
+ul.show {
+  display: block;
+}
+
+.nav-link-item:link,
+.nav-link-item:visited {
   text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+
+.nav-link-item:hover,
+.nav-link-item:active {
+  color: #ffa94d94;
 }
 
 .hero-container {
   display: flex;
   height: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero {
@@ -64,12 +79,16 @@ nav {
   margin-left: 4rem;
   margin-bottom: 30rem;
   font-size: 5.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 9rem;
   text-transform: uppercase;
 }
 
-h1 {
-  font-size: 9rem;
-}
+
 
 h1 {
   font-size: 5rem;
@@ -77,11 +96,14 @@ h1 {
   text-transform: uppercase;
 }
 .header-secondary {
+  margin: 1.2rem 0;
   font-size: 3.2rem;
   text-transform: uppercase;
 }
-.information-text {
-  font-size: 2.4rem;
+.about-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  max-width: 44rem;
 }
 
 .btn {
@@ -98,7 +120,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ef744b;
+  background-color: #ffa94d;
   cursor: pointer;
 }
 
@@ -124,10 +146,11 @@ footer {
   padding-left: 1.2rem;
   padding-bottom: 1.8rem;
   padding: 1.8rem 1.2rem;
+  transition: all .3s;
 }
 
 .project:hover {
-  background-color: #ef744b44;
+  background-color: #ffa94d94;
 }
 
 .project-number {
@@ -153,6 +176,7 @@ footer {
   font-size: 2.2rem;
   color: #444;
   max-width: 70rem;
+  padding-right: 1.2rem;
 }
 
 .project-imgs {
@@ -164,11 +188,20 @@ footer {
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
 @media (max-width: 50rem) {
   .project-imgs {
     /* max-height: 25rem; */
     max-width: 40rem;
     margin-left: 0;
+    margin-top: 1.2rem;
   }
 
   .project {
@@ -178,5 +211,26 @@ footer {
   .project-name {
     margin-top: 0;
     font-size: 3.2rem;
+  }
+
+
+  
+}
+
+@media (max-width: 35rem) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  nav {
+    align-items: flex-start;
   }
 }
