@@ -117,7 +117,7 @@ h1 {
   height: 6rem;
   border-radius: 2.5rem;
   border: 2px solid #fff;
-  background-color: #333;
+  background-color: transparent;
   color: #fff;
   text-align: center;
   font-size: 3rem;
@@ -125,8 +125,9 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ffa94d;
+  background-color: #ffa94d94;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 footer {
@@ -228,7 +229,8 @@ footer {
   padding: 2.2rem;
   padding-top: 2.2rem;
   border-top: 2px solid #333;
-  background-color: rgb(228, 228, 228);
+  background-color: #1c1d25;
+  color: #fff;
 }
 
 
