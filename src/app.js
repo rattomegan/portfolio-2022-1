@@ -23,3 +23,4 @@ function toggleButton() {
 hamburgerButton.addEventListener('click', toggleButton);
 projectLink.addEventListener('click', toggleButton)
 contactLink.addEventListener('click', toggleButton)
+

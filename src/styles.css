@@ -62,7 +62,7 @@ ul.show {
 
 .nav-link-item:hover,
 .nav-link-item:active {
-  color: #000099;
+  color: #ffaa00;
 }
 
 .hero-container {
@@ -257,6 +257,7 @@ form {
   flex-direction: column;
   font-size: 2.2rem;
   max-width: 50rem;
+  margin-bottom: 5rem;
 }
 
 .input-field {
@@ -275,6 +276,26 @@ input {
   min-width: 30rem;
   min-height: 20rem;
   font-family: 'Inter', sans-serif;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  display: inline-block;
+  padding: 1.8rem;
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: #ffaa00;
+}
+
+.copyright {
+  padding-left: 1.8rem;
+  color: #777;
 }
 
 @media (max-width: 50rem) {
@@ -296,9 +317,6 @@ input {
     margin-top: 0;
     font-size: 3.2rem;
   }
-
-
-  
 }
 
 @media (max-width: 35rem) {
@@ -323,3 +341,5 @@ input {
     align-items: flex-start;
   }
 }
+
+
