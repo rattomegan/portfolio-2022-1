@@ -6,16 +6,12 @@
 
 html {
   font-size: 62.5%;
-
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1c1d25;
   max-width: 140rem;
-  /* min-height: 100vh */
-  /* to center the entire page */
-  /* margin: 0 auto; */
 }
 
 section {
@@ -81,32 +77,28 @@ ul.show {
 }
 
 .hero-text {
-  /* margin-top: 9rem;
-  margin-left: 4rem;
-  margin-bottom: 30rem; */
   font-size: 5.2rem;
   display: flex;
   flex-direction: column;
 }
 
 .hero-title {
-  /* margin-top: 3rem; */
   font-size: 9rem;
   text-transform: uppercase;
 }
-
-
 
 h1 {
   font-size: 5rem;
   font-weight: 300;;
   text-transform: uppercase;
 }
+
 .header-secondary {
   margin: 1.2rem 0;
   font-size: 3.2rem;
   text-transform: uppercase;
 }
+
 .about-text {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -147,7 +139,6 @@ footer {
   display: flex;
   flex-direction: column;
   min-width: 60rem;
-  /* padding-left: 1.2rem; */
 }
 
 .project-header {
@@ -155,10 +146,8 @@ footer {
 }
 
 .project {
-  /* margin-top: 3.2rem; */
   display: flex;
   border-top: 2px solid #333;
-  /* padding-left: 1.2rem; */
   padding-bottom: 1.8rem;
   padding: 1.8rem 1.2rem;
   gap: 1.2rem;
@@ -166,7 +155,6 @@ footer {
 }
 
 .project:hover {
-  background-color: #ffe6b3;
   background-color: #ffeecc;
 }
 
@@ -180,6 +168,7 @@ footer {
 .project-detail {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.2rem;
 }
 
 .project-name {
@@ -202,10 +191,9 @@ footer {
 
 .project-links {
   display: flex;
-  /* flex-direction: column; */
-  align-items: flex-end;
-  gap: 1.6rem;
-  padding-bottom: .4rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+  gap: 4rem;
 }
 
 .project-link:link,
@@ -223,14 +211,12 @@ footer {
 }
 
 .project-imgs {
-  /* max-height: 25rem; */
   max-width: 40rem;
   margin-left: auto;
 }
 .project-imgs img {
   width: 100%;
   border-radius: 3px;
-  margin-bottom: 4rem;
 }
 
 .hamburger {
@@ -248,7 +234,6 @@ footer {
   background-color: #1c1d25;
   color: #fff;
 }
-
 
 form {
   /* margin-left: 2.2rem; */
@@ -300,7 +285,6 @@ input {
 
 @media (max-width: 50rem) {
   .project-imgs {
-    /* max-height: 25rem; */
     max-width: 40rem;
     margin-left: 0;
     margin-top: 1.2rem;
@@ -309,6 +293,7 @@ input {
   .project {
     flex-wrap: wrap;
   }
+
   .project-section {
     width: 40rem;
   }
@@ -316,6 +301,11 @@ input {
   .project-name {
     margin-top: 0;
     font-size: 3.2rem;
+  }
+
+  .project-links {
+    justify-content: flex-start;
+    padding-bottom: 1.8rem;
   }
 }
 
@@ -331,7 +321,6 @@ input {
     color: #fff;
     font-size: 3rem;
   }
-
 
   /* .nav-links {
     display: none;
