@@ -152,10 +152,15 @@ footer {
   padding: 1.8rem 1.2rem;
   gap: 1.2rem;
   transition: all .3s;
+  background-image: linear-gradient(to left, transparent 50%, rgba(240, 243, 189, 70%) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.6s ease;
 }
 
 .project:hover {
-  background-color: #ffeecc;
+  /* background-color: #ffeecc; */
+  background-position: left bottom;
 }
 
 .project-number {
