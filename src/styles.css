@@ -336,4 +336,16 @@ input {
   }
 }
 
+.hero-link:link,
+.hero-link:visited {
+  text-decoration: none;
+  display: block;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 600;
+}
 
+.hero-link:hover,
+.hero-link:active {
+  color: #ffaa00;
+}
